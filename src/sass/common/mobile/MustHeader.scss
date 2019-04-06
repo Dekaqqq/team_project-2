@@ -3,3 +3,19 @@
     background-image: url('')
 
 }
+.navigation__item{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 2.36;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: var(--white); 
+}
+
+.navigation__item:hover,.navigation__item:focus{
+    border-bottom:2px solid var(--macaroni-and-cheese);
+  }
+
+.navigation__item-last{
+    margin-top: 50px;
+}
