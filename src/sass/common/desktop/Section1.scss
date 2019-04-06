@@ -1,0 +1,77 @@
+@media (min-width: 1920px) {
+    .study-programm {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 116px;
+        padding-bottom: 108px;
+
+        &__image {
+            order: -1;
+            margin-bottom: 56px;
+        }
+
+        &__intro {
+            width: 650px;
+            font-size: 20px;
+            padding-left: 112px;
+            margin-bottom: 60px;
+
+            &--part1, &--part2 {
+                padding-right: 0;
+                line-height: 2;
+                margin-bottom: 10px;
+            }
+
+            &::before {
+                top: -54px;
+                left: 66px;
+                font-size: 90px;
+            }
+        }
+
+        &__description {
+            height: 228px;
+            font-size: 25px;
+            line-height: 35px;
+            padding: 56px 204px 0 244px;
+            margin-bottom: 100px;
+
+            &::before {
+                top: 60px;
+                left: 204px;
+                height: 88px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+    }
+
+    .study-list::before,
+    .study-list::after {
+        width: 0;
+        height: 0;
+    }
+
+    .study-item {
+        position: relative;
+        width: 324px;
+        height: 302px;
+
+        &:not(:last-child)::after {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            display: block;
+            content: '';
+            width: 1px;
+            height: 295px;
+            border: 0.5px dashed #e3e3e4;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@media (min-width: 768px) {
+
+    .study-programm {
+        padding-top: 50px;
+        padding-bottom: 26px;
+
+        &__intro {
+            font-size: 18px;
+
+            &--part1 {
+                padding-right: 64px;
+            }
+
+            &--part2 {
+                padding-right: 108px;
+            }
+
+            &::before {
+                font-size: 90px;
+                top: -60px;
+                left: -38px;
+            }
+        }
+
+        &__image {
+            margin-bottom: 35px;
+        }
+
+        &__description {
+            position: relative;
+            height: 182px;
+            font-size: 20px;
+            line-height: 1.4;
+            letter-spacing: 1.2;
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 76px;
+            padding-right: 108px;
+            margin-bottom:30px;
+            border-radius: 4px;
+            box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.15);
+
+            &::before {
+                position: absolute;
+                width: 2px;
+                height: 100px;
+                left: 48px;
+                top: 38px;
+            }
+        }
+
+        &__title {
+            font-size: 33px;
+            padding-left: 54px;
+            align-self: flex-start;
+        }
+    }
+
+    .study-list {
+        position: relative;
+        @include flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &::before {
+            position: absolute;
+            left: 310px;
+            display: block;
+            content: '';
+            width: 1px;
+            height: 584px;
+            border: 0.5px dashed #e3e3e4;
+        }
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 620px;
+            height: 1px;
+            border: 0.5px dashed #e3e3e4;
+        }
+    }
+
+    .study-item {
+        width: 309px;
+        height: 294px;
+        padding-left: 56px;
+        border-radius: 5px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+        
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 1px;
+        }
+
+        &__title {
+            font-size: 30px;
+            padding-top: 46px;
+        }
+
+        &__description {
+            padding-right: 50px;
+            margin-bottom: 6px;
+        }
+
+        &__age {
+            font-size: 40px;
+            margin-bottom: 14px;
+
+            &--sup {
+                top: 24px;
+                left: 114px;
+            }
+        }
+
+        &__icon {
+            transition: scale 200ms linear;
+        }
+
+        &:hover {
+            z-index: 1;
+            box-shadow: 3px 5.196px 18px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        &:hover &__icon {
+            transform: scaleX(2);
+        }
+    }
+}
