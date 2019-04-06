@@ -27,6 +27,10 @@
         }
     }
 
+    .footer-list--desktop{
+        display: none;
+    }
+
     .button--footer{
         padding: 12px 17px;
         margin-bottom: 34px;
@@ -39,7 +43,7 @@
 
     &-list{
         max-width: 146px;
-        @include flex(flex, space-between)
+        @include flex;
     }
 
     &-bottom{

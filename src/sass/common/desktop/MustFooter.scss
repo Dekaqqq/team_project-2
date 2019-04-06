@@ -1,0 +1,29 @@
+@media (min-width: 1920px){
+    .footer{
+        min-width: 1920px;
+
+        &-top{
+            max-width: 1154px;
+            padding-left: 310px;
+            padding-right: 296px;
+        }
+
+        .footer-list--tablet{
+            display: none;
+        }
+
+        .footer-list--desktop{
+            min-width: 160px;
+            @include flex;
+        }
+
+        &-bottom{
+            padding-left: 310px;
+            padding-right: 310px;
+        }
+
+        .footer-bottom__txt:not(:last-child){
+               margin-right: 74px;
+           }
+    }
+}
