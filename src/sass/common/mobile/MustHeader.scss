@@ -2,6 +2,11 @@
   background-image: url('../images/header-bg.jpg');
   background-position: 50% 0;
   background-size: cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  background-image: url('../images/header-bg@2x.jpg');
+  }
 }
 
 .header__inner {
@@ -11,7 +16,9 @@
 
 .header__text-content {
   padding: 320px 20px 0;
-  z-index:-1;
+  z-index:0;
+  position: relative;
+  
 }
 
 .navigation__logo {
@@ -27,7 +34,7 @@
   background: rgba($purpley, $alpha: 0);
   display: flex;
   justify-content: space-between;
-z-index:1;}
+  z-index:1;}
 
 .navigation__item {
   text-align: center;
@@ -244,7 +251,7 @@ z-index:1;}
 }
 
 .changeColor {
-  background-color: white;
+  background-color: $white;
   transition: background-color 0.3s;
 
   & .line-contain__item {
@@ -252,3 +259,8 @@ z-index:1;}
   }
 
 }   
+
+.changeColor input:checked ~ .line-contain .line-contain__item {
+  background-color: $white;
+}
+
