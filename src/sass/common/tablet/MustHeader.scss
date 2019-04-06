@@ -1,4 +1,5 @@
 @media (min-width:768px){
+
     .header__text-content {
         padding: 300px 40px 0;
       }
@@ -8,6 +9,16 @@
         //display: none;
         //background-color: $purpley;
         
+      }
+
+      .navigation__item {
+       padding-bottom:10px;
+      }
+
+      .navigation__link {     
+        font-size: 28px;     
+        line-height: 42px;
+        padding-bottom: 8px;
       }
 
       .header__headline{
@@ -25,6 +36,13 @@
     .header__scroll {
         bottom: 60px;}
     
-        
+    #menuToggle input:checked ~ #menu {
+      padding-top: 162px;
+    }   
+    
+    .navigation__link:hover,
+.navigation__link:focus {
+  border-bottom: 3px solid $macaroni-and-cheese;
+}
      
 }
