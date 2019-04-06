@@ -1,0 +1,11 @@
+@mixin flex($display: flex, $justify-content: space-between, $align-items: center){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin pseudo($display: block, $position: absolute, $content: ''){
+    display: $display;
+    position: $position;
+    content: $content;
+}
