@@ -1,60 +1,55 @@
-.mainHead{
-    background-image: url('../images/header-bg.jpg');
-    background-position: 50% 0;
-    background-size: cover;
-
+.mainHead {
+  background-image: url('../images/header-bg.jpg');
+  background-position: 50% 0;
+  background-size: cover;
 }
 
-.header__inner{
-    padding:0 0 130px;
+.header__inner {
+  padding: 0 0 130px;
 }
 
-.header__text-content{ 
-    padding:0 20px 0;
+.header__text-content {
+  padding: 320px 20px 0;
 }
 
-.navigation{
-position: sticky;
-top:1px;
-padding:16px 19px;
-//display: none;
-//background-color: $purpley;
-background: rgba($purpley, $alpha: 0);
-
-display: flex;
-    justify-content: space-between;
-   
-
+.navigation {
+  position: sticky;
+  top: 1px;
+  padding: 16px 19px;
+  //display: none;
+  //background-color: $purpley;
+  background: rgba($purpley, $alpha: 0);
+  display: flex;
+  justify-content: space-between;
 }
 
-.navigation__item{
-    text-align: center;
-    
+.navigation__item {
+  text-align: center;
 }
 
-.navigation__link:hover,.navigation__link:focus{
-    border-bottom:2px solid $macaroni-and-cheese;
-  }
-
-.navigation__item-last{
-    margin-top: 50px;
+.navigation__link:hover,
+.navigation__link:focus {
+  border-bottom: 2px solid $macaroni-and-cheese;
 }
 
-.header__headline{
-  padding-top:320px;
+.navigation__item-last {
+  margin-top: 50px;
+}
+
+.header__headline {
   font-size: 35px;
   font-weight: 800;
   line-height: 1.69;
-  letter-spacing: 0.9px; 
+  letter-spacing: 0.9px;
   color: $white;
   text-align: center;
-  padding-bottom:16px;
+  padding-bottom: 16px;
 }
 
-.header__text{
-    font-family: 'Ubuntu';
-    background: rgba(22, 24, 32, 0.68);
-    font-size: 16px;
+.header__text {
+  font-family: 'Ubuntu';
+  background: rgba(22, 24, 32, 0.68);
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -62,119 +57,111 @@ display: flex;
   letter-spacing: 0.8px;
   text-align: center;
   color: $white;
-  padding:9px 15px;
+  padding: 9px 15px;
 }
-.inline-orange{
+
+.inline-orange {
   font-weight: bold;
-  color: $macaroni-and-cheese;  
+  color: $macaroni-and-cheese;
 }
 
-
-.navigation__button{
-    font-family: "Ubuntu";
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 42px;
-    letter-spacing: 0.4px;
-    color: #f6f9fa;
-    width: 192px;
-    height: 42px;
-    box-shadow: 0px 3px 5px 0 rgba(233, 172, 56, 0.4);
-    background-color: $macaroni-and-cheese;
-    border:none;
-
+.navigation__button {
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 42px;
+  letter-spacing: 0.4px;
+  color: #f6f9fa;
+  width: 192px;
+  height: 42px;
+  box-shadow: 0px 3px 5px 0 rgba(233, 172, 56, 0.4);
+  background-color: $macaroni-and-cheese;
+  border: none;
+  border-radius: 4.6px;
 }
 
-.navigation__link{
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 2.36;
-    letter-spacing: 0.6px; 
-    color: $white; 
-    transition: color 0.3s ease;
-    padding-bottom:8px;
+.navigation__link {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 2.36;
+  letter-spacing: 0.6px;
+  color: $white;
+  transition: color 0.3s ease;
+  padding-bottom: 8px;
 }
-
-
 
 .header__scroll {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    bottom:-50px;
-    left:50%;
-    display: inline-block;
-    border-bottom:2px solid $white;
-    border-right:2px solid $white;
-    transform: rotate(45deg);
-  }
-
-.header__scroll::after{
-    content:'';
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    bottom:-10px;
-    left:8px;
-    display: inline-block;
-    border-bottom:2px solid $white;
-    border-right:2px solid $white;
-
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: -50px;
+  left: 50%;
+  display: inline-block;
+  border-bottom: 2px solid $white;
+  border-right: 2px solid $white;
+  transform: rotate(45deg);
+  z-index:1;
 }
 
-#menuToggle input
-{
+.header__scroll::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: -10px;
+  left: 8px;
+  display: inline-block;
+  border-bottom: 2px solid $white;
+  border-right: 2px solid $white;
+  z-index: inherit;
+}
+
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: 12px;
-right: 16px;
-  
+  right: 16px;
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+  z-index: 8; /* and place it over the hamburger */
+
   -webkit-touch-callout: none;
 }
 
 // /*
 //  * Just a quick hamburger
 //  */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   height: 3px;
   width: 28px;
   margin-bottom: 5px;
   position: relative;
-  
   background-color: $white;
   border-radius: 0px;
-  
-  z-index: 1;
-  
+  z-index: 8;
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+  opacity 0.55s ease;
+  z-index:7;
 }
 
-.line-contain{
-    display: inline-block;
+.line-contain {
+  display: inline-block;
 }
 
-#menuToggle .line-contain span:first-child
-{
+#menuToggle .line-contain span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle .line-contain span:nth-last-child(2)
-{
+#menuToggle .line-contain span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -182,17 +169,15 @@ right: 16px;
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ .line-contain span
-{
+#menuToggle input:checked ~ .line-contain span {
   opacity: 1;
-  transform: rotate(-45deg) translate(1px,1px);
+  transform: rotate(-45deg) translate(1px, 1px);
 }
 
 // /*
 //  * But let's hide the middle one.
 //  */
- #menuToggle input:checked ~ .line-contain span:nth-last-child(3)
-{
+#menuToggle input:checked ~ .line-contain span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -200,44 +185,56 @@ right: 16px;
 // /*
 //  * Ohyeah and the last one should go the other direction
 //  */
-#menuToggle input:checked ~ .line-contain  span:nth-last-child(2)
-{
-  transform: rotate(45deg) translate(-4px,-9px);
+#menuToggle input:checked ~ .line-contain span:nth-last-child(2) {
+  transform: rotate(45deg) translate(-4px, -9px);
 }
 
 // /*
 //  * Make this absolute positioned
 //  * at the top left of the screen
 //  */
-#menu
-{  //display: none;
-  position: absolute;
-  width: 100%;
-//   margin: -100px 0 0 -70px;
-//   padding: 50px;
-//   padding-top: 125px;
-//   list-style-type: none;
-//   -webkit-font-smoothing: antialiased;
-//   /* to stop flickering of text in safari */ 
-//   transform-origin: 0% 0%;
-//   transform: translate(100%, 0); 
-//   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-} 
-
-#menuToggle input:checked ~ #menu{
-    left:0;
-    background:rgba($purpley, $alpha: 1) ;
-    width:100vw;
-    height:100vh; 
+#menu {
+  //display: none;
+  padding-top:56px;
+  display: none;
+  width: 100vw;
+  //   margin: -100px 0 0 -70px;
+  //   padding: 50px;
+  //   padding-top: 125px;
+  //   list-style-type: none;
+  //   -webkit-font-smoothing: antialiased;
+  //   /* to stop flickering of text in safari */
+  //   transform-origin: 0% 0%;
+  //   transform: translate(100%, 0);
+  //   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+
+#menuToggle input:checked .navigation {
+  background: rgba($purpley, $alpha: 1);
+}
+
+#menuToggle input:checked ~ #menu {
+    display: block;
+    top:0;
+    left:0;
+    position: fixed;
+    background: rgba($purpley, $alpha: 1);
+    width: 100vw;
+    height: 100vh;
+    z-index:5;
+}
+
 
 
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ .navigation__list
-{
+#menuToggle input:checked ~ .navigation__list {
   transform: none;
 }
 
-    
+#menuToggle input:checked ~ .navigation__logo{
+    z-index: 10;
+}
+
+
