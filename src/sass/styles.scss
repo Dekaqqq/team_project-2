@@ -1,4 +1,10 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'vars';
+@import 'fonts';
+@import 'normalize';
+@import 'base';
+@import 'mixins';
+
+@import 'common/common';
