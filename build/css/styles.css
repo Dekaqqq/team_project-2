@@ -375,6 +375,34 @@ template {
   display: none;
 }
 
+.section3__headline {
+  text-transform: uppercase;
+}
+
+.section3__block {
+  width: 280px;
+  height: 260px;
+  background-color: #343;
+  margin-bottom: 20px;
+  border-radius: 0 40px 0 40px;
+  box-shadow: 1.5px 2.6px 8px 0 rgba(1, 1, 1, 0.1);
+}
+
+.section3__block--border {
+  width: 244px;
+  height: 225px;
+  border: dotted 1px #fff;
+  border-radius: 0 40px 0 40px;
+}
+
+.section3__block--title {
+  color: #fff;
+}
+
+.section3__block--desc {
+  color: #fff;
+}
+
 p {
   color: red;
 }
