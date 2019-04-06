@@ -1,27 +1,75 @@
+
+
 <header class="mainHead">
+    <nav class="navigation">
+        <a href="#" class="navigation__logo">
+            <img src="../images/logo-k.png"
+                srcset="../images/logo-k@2x.png 2x,
+                        ../images/logo-k@3x.png 3x"
+            class="Logo-k" alt="logo">
+        </a>
+
+            <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <div class="line-contain">
+                      <span></span>
+                        <span></span>
+                        <span></span>  
+                    </div>
+                    
+                    
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul class="navigation__list list" id="menu">
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                  Front-End  
+                                </a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                   Game Dev 
+                                </a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    Smart Design
+                                </a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                    GoStart Kids
+                                </a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                  Вакансії  
+                                </a></li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">
+                                  Контакти  
+                                </a></li>
+                            <li class="navigation__item navigation__item-last">
+                                <button class="button navigation__button">
+                                    Залишити заявку
+                                </button>
+                            </li>
+            
+                        </ul>
+                  </div>
+        
+    </nav>
     <div class="header__inner">
-        <nav class="navigation">
-            <a href="#" class="navigation__logo">
-                <img src="" alt="logo">
-            </a>
-
-            <ul class="navigation__list">
-                <li class="navigation__item">Front-Eng</li>
-                <li class="navigation__item">Game Dev</li>
-                <li class="navigation__item">Smart Design</li>
-                <li class="navigation__item">GoStart Kids</li>
-                <li class="navigation__item">Вакансії</li>
-                <li class="navigation__item">Контакти</li>
-                <li class="navigation__item navigation__item-last">
-                    <button class="button navigation__button">
-                        Залишити заявку
-                    </button>
-                </li>
-
-            </ul>
-        </nav>
-
-        <article>
+        <article class="header__text-content">
             <h2 class="header__headline">
                 Наша місія
             </h2>
@@ -34,5 +82,9 @@
                 </span>
             </p>
         </article>
+        <div class="header__scroll">
+
+        </div>
+        
     </div>
 </header>
