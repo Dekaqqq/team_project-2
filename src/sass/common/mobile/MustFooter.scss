@@ -1,0 +1,58 @@
+.footer{
+    min-width: 320px;
+
+    &-txt{
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.79;
+        letter-spacing: 0.6px;
+        color: $cool-grey;
+    }
+
+    &-top{
+        padding: 42px 64px 32px;
+        background-color: $black-two;
+
+        &__img{
+            margin-bottom: 18px;
+        }
+
+        &__address{
+            margin-bottom: 26px;
+        }
+
+        &__contacts{
+            max-width: 150px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .button--footer{
+        padding: 12px 17px;
+        margin-bottom: 34px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 1;
+        border-radius: 4px;
+    }
+
+    &-list{
+        max-width: 146px;
+        @include flex(flex, space-between)
+    }
+
+    &-bottom{
+        padding: 24px 64px;
+        background-color: $footerBottomBg;
+
+        &__txt{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 2.08;
+            letter-spacing: 0.5px;
+            color: $slate-grey;
+        }
+    }
+}
