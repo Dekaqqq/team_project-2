@@ -6,15 +6,22 @@
 
 .header__inner {
   padding: 0 0 130px;
+  z-index: -1;
 }
 
 .header__text-content {
   padding: 320px 20px 0;
+
+ 
+}
+
+.navigation__logo{
+   z-index: 10;  
 }
 
 .navigation {
   position: sticky;
-  top: 1px;
+  top: 0px;
   padding: 16px 19px;
   //display: none;
   //background-color: $purpley;
@@ -25,6 +32,7 @@
 
 .navigation__item {
   text-align: center;
+
 }
 
 .navigation__link:hover,
@@ -86,7 +94,7 @@
   text-decoration: none;
   font-size: 25px;
   font-weight: bold;
-  line-height: 2.36;
+  line-height: 42px;
   letter-spacing: 0.6px;
   color: $white;
   transition: color 0.3s ease;
@@ -103,7 +111,7 @@
   border-bottom: 2px solid $white;
   border-right: 2px solid $white;
   transform: rotate(45deg);
-  z-index:1;
+  z-index:0;
 }
 
 .header__scroll::after {
@@ -195,7 +203,7 @@
 //  */
 #menu {
   //display: none;
-  padding-top:56px;
+  padding-top: 56px;
   display: none;
   width: 100vw;
   //   margin: -100px 0 0 -70px;
@@ -222,9 +230,8 @@
     width: 100vw;
     height: 100vh;
     z-index:5;
+    padding-top:112px;
 }
-
-
 
 /*
  * And let's slide it in from the left
@@ -236,5 +243,10 @@
 #menuToggle input:checked ~ .navigation__logo{
     z-index: 10;
 }
+
+.changeColor {
+    background: white;
+    transition: color 0.2s;
+ }
 
 

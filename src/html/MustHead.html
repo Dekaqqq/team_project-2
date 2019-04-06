@@ -1,7 +1,7 @@
 
 
 <header class="mainHead">
-    <nav class="navigation">
+    <nav class="navigation" id="changecolor">
         <a href="#" class="navigation__logo">
             <img src="../images/logo-k.png"
                 srcset="../images/logo-k@2x.png 2x,
@@ -33,7 +33,7 @@
                     Too bad the menu has to be inside of the button
                     but hey, it's pure CSS magic.
                     -->
-                    
+
                     <ul class="navigation__list list" id="menu">
                             <li class="navigation__item">
                                 <a href="#" class="navigation__link">
@@ -89,3 +89,27 @@
         
     </div>
 </header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+   $(window).scroll(function () {
+       
+       var element;
+
+      if ($(this).scrollTop() > 1) {
+        element = document.getElementById("changecolor");
+         element.classList.add("changeColor");
+      }
+      if ($(this).scrollTop() < 1) {
+        element = document.getElementById("changecolor");
+        
+         element.classList.remove("changeColor");
+      }
+
+   });
+});
+    
+
+ </script>
+</body>
