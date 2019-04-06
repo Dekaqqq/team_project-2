@@ -375,6 +375,7 @@ template {
   display: none;
 }
 
+<<<<<<< HEAD
 .title-case {
   width: 235px;
   height: 30px;
@@ -397,4 +398,14 @@ template {
 
 .section-2__list {
   list-style: none;
+=======
+p {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  p {
+    color: #000;
+  }
+>>>>>>> 092581d3671b625546b6a4c08398218181fabfa1
 }
