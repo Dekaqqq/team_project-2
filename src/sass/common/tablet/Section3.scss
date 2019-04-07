@@ -1,4 +1,8 @@
 @media(min-width: 768px) {
+  .section3{
+    padding-bottom: 75px;
+  }
+  
   .section3__headline{
     font-size: 33px;
     line-height: 2.36;
@@ -29,7 +33,15 @@
     min-width: 300px;
     min-height: 293px;
     margin: 0;
-    margin-bottom: 23px;
+
+    &:not(:last-child){
+      margin-bottom: 0px;
+    }
+    
+    &:not(:nth-last-child(-n+2)){
+      margin-bottom: 23px;
+    }
+    
 
     &__border{
       width: 264px;

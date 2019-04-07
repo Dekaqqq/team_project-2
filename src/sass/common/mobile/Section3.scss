@@ -1,3 +1,7 @@
+.section3{
+  padding-bottom: 60px;
+}
+
 .section3__headline{
   text-transform: uppercase;
   font-family: 'Open Sans';
@@ -24,7 +28,7 @@
 }
 
 .section3__block1{
-  background-color: $light-khaki ;
+  background-color: $light-khaki;
 }
 
 .section3__block2{
@@ -39,15 +43,19 @@
   background-color: $light-blue-grey;
 }
 
+
 .section3-block{
   width: 280px;
   height: 260px;
-  margin-bottom: 20px;
   border-radius: 0 40px 0 40px;
   box-shadow: 1.5px 2.6px 8px 0 rgba(1, 1, 1, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
 
   &__border{
     width: 244px;
