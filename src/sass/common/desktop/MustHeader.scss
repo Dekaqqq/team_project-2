@@ -74,4 +74,16 @@
   .navigation__button {
     border-radius: 4.6px;
   }
+
+  .top-button { /* Hidden by default */
+    
+    bottom: 40px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    padding: 40px; /* Some padding */  
+  }
+
+  .top-button svg{
+    width: 30px;
+    height: 30px;
+  }
 }
