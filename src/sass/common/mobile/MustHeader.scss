@@ -264,3 +264,8 @@
 .changeColor input:checked ~ .line-contain .line-contain__item {
   background-color: $white;
 }
+
+
+.top-button {
+  display: none; /* Hidden by default */
+}
