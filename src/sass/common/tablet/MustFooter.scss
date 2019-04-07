@@ -1,5 +1,21 @@
 @media (min-width: 768px){
-    p{
-        color: #000;
+    .footer{
+        min-width: 768px;
+
+        &-top{
+            padding: 54px 74px 34px;
+        }
+
+        &__top-wrap1{
+            @include flex;
+        }
+
+        &-bottom__txt-wrap{
+            display: flex;
+            
+           .footer-bottom__txt:not(:last-child){
+               margin-right: 38px;
+           }
+        }
     }
 }
