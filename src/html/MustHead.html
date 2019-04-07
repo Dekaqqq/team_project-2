@@ -1,0 +1,101 @@
+<header class="mainHead">
+    <nav class="navigation" id="changecolor">
+        <a href="#" class="navigation__logo">
+
+            <picture class="navigation__picture">
+                <source media="(min-width: 768px)" sizes="143px" srcset="../images/logo768.png 143w,
+                                ../images/logo768@2x.png 286w,
+                                ../images/logo768@3x.png 429w" />
+                <source sizes="100px" srcset="../images/logo-k.png 100w,
+                            ../images/logo-k@2x.png 200w,
+                            ../images/logo-k@3x.png 300w" />
+                <img class="header__Logo-k" src="../images/logo-k.png" alt="logo" />
+            </picture>
+
+        </a>
+
+        <div id="menuToggle" class="menuToggle">
+            <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+            <input type="checkbox" />
+
+            <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+            <div class="line-contain">
+                <span class="line-contain__item"></span>
+                <span class="line-contain__item"></span>
+                <span class="line-contain__item"></span>
+            </div>
+
+
+            <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+
+            <ul class="navigation__list list" id="menu">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Front-End
+                    </a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Game Dev
+                    </a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Smart Design
+                    </a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        GoStart Kids
+                    </a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Вакансії
+                    </a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        Контакти
+                    </a></li>
+                <li class="navigation__item navigation__item-last">
+                    <button class="button navigation__button">
+                        Залишити заявку
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+    <div class="header__inner">
+        <article class="header__text-content">
+            <h2 class="header__headline">
+                Наша місія
+            </h2>
+
+            <p class="header__text">
+                Допомогти кожному підлітку
+                створити свою
+                <span class="inline-orange">
+                    історію успіху
+                </span>
+            </p>
+            <a href="#" class="header-arrows">
+                <div class="header__scroll">
+
+                </div>
+            </a>
+
+        </article>
+
+
+    </div>
+</header>
+</body>
