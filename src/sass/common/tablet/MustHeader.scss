@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+  .header__text-content {
+    padding: 300px 40px 0;
+  }
+
+  .navigation {
+    padding: 20px 40px 20px;
+    //display: none;
+    //background-color: $purpley;
+  }
+
+  .navigation__item {
+    padding-bottom: 10px;
+  }
+
+  .navigation__link {
+    font-size: 28px;
+    line-height: 42px;
+    padding-bottom: 8px;
+  }
+
+  .header__headline {
+    font-size: 45px;
+    line-height: 1.32;
+    letter-spacing: 1.1px;
+  }
+
+  .header__text {
+    font-size: 27px;
+    width: 418px;
+    margin: 0 auto;
+  }
+
+  #menuToggle input:checked ~ #menu {
+    padding-top: 162px;
+  }
+
+  #menuToggle input {
+    top: 24px;
+    right: 33px;
+  }
+
+  .line-contain {
+    padding-top: 10px;
+  }
+
+  .navigation__link:hover,
+  .navigation__link:focus {
+    border-bottom: 3px solid $macaroni-and-cheese;
+  }
+}
