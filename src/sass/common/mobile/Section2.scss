@@ -1,13 +1,13 @@
 
 .section-2{
-  margin-top: 30px;
-  margin-bottom: 50px;
+    margin: 30px auto 50px;
+    max-width: 320px;
 }
 .title-case{
     margin-bottom: 30px;
- display:flex;
-  width: 235px;
-  height: 30px;
+    display:flex;
+    width: 235px;
+    height: 30px;
 }
 .title-case__bg{width: 30px;
     height: 30px;
@@ -23,7 +23,6 @@
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 0px;
-    font-family: OpenSans;
     font-size: 20px;
 }
 .section-2__list{
@@ -32,9 +31,9 @@
     margin-left: 45px;
 }
 .section-2__bg{
-  border-radius: 50% 50%;
-  width: 55px;
-  height: 55px;
+    border-radius: 50% 50%;
+    width: 55px;
+    height: 55px;
 }
 .section-2__bg--1
 {

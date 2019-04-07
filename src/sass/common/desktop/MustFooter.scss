@@ -3,9 +3,7 @@
         min-width: 1920px;
 
         &-top{
-            max-width: 1760px;
-            padding-left: 310px;
-            padding-right: 296px;
+            max-width: 1298px;
         }
 
         .footer-list--tablet{
@@ -20,10 +18,15 @@
         &-bottom{
             padding-left: 310px;
             padding-right: 310px;
+
+        }
+
+        &-bottom__txt-wrap{
+            max-width: 1298px;
         }
 
         .footer-bottom__txt:not(:last-child){
-               margin-right: 74px;
+               margin-right: 76px;
            }
     }
 }

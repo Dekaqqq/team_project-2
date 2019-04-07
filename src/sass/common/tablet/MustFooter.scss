@@ -3,7 +3,8 @@
         min-width: 768px;
 
         &-top{
-            padding: 54px 74px 34px;
+            max-width: 620px;
+            padding: 54px 0 34px;
         }
 
         &__top-wrap1{
@@ -11,6 +12,7 @@
         }
 
         &-bottom__txt-wrap{
+            max-width: 620px;
             display: flex;
             
            .footer-bottom__txt:not(:last-child){

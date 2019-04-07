@@ -1,5 +1,6 @@
 .footer{
     min-width: 320px;
+    background-color: $black-two;
 
     &-txt{
         font-size: 14px;
@@ -10,8 +11,9 @@
     }
 
     &-top{
+        max-width: 320px;
+        margin: 0 auto;
         padding: 42px 64px 32px;
-        background-color: $black-two;
 
         &__img{
             margin-bottom: 18px;
@@ -49,6 +51,11 @@
     &-bottom{
         padding: 24px 64px;
         background-color: $footerBottomBg;
+
+        &__txt-wrap{
+            max-width: 192px;
+            margin: 0 auto;
+        }
 
         &__txt{
             font-family: 'Open Sans', sans-serif;
