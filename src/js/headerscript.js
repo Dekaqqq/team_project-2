@@ -9217,10 +9217,11 @@ $(function() {
  
        if ($(this).scrollTop() > 500) {
          document.getElementById("changecolor").classList.add("changeColor");
-         
+         document.getElementById("myBtn").classList.add("top-button--active");
        }
        if ($(this).scrollTop() < 500) {
-         document.getElementById("changecolor").classList.remove("changeColor");
+				 document.getElementById("changecolor").classList.remove("changeColor");
+				 document.getElementById("myBtn").classList.remove("top-button--active");
        }
  
     });
@@ -9229,15 +9230,7 @@ $(function() {
 
 
 
- window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    document.getElementById("myBtn").classList.add("top-button--active");
-  } else {
-    document.getElementById("myBtn").classList.remove("top-button--active");
-  }
-}
+ 
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
