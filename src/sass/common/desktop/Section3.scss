@@ -11,6 +11,14 @@
   .section3-block:not(:nth-last-child(-n+2)){
     margin-bottom: 0px;
   }
+
+   .section3__headline{
+       max-width: 1298px;
+   }
+
+   .section3__blocks{
+       max-width: 1298px;
+   }
     
 }
 
