@@ -24,7 +24,8 @@
 }
 
 .navigation {
-  position: sticky;
+  position: fixed;
+  width:calc(100vw - 40px);
   top: 0px;
   padding: 16px 19px;
   //display: none;
@@ -33,6 +34,14 @@
   display: flex;
   justify-content: space-between;
   z-index: 1;
+
+  @media (min-width:768px){
+    width:calc(100vw - 80px);
+  }
+
+  @media (min-width:1920px){
+    width:calc(100vw - 104px);
+  }
 }
 
 .navigation__item {
@@ -70,6 +79,8 @@
   text-align: center;
   color: $white;
   padding: 9px 15px;
+  max-width:250px;
+  margin:0 auto;
 }
 
 .inline-orange {
