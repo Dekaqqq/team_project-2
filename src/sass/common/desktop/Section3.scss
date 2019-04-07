@@ -1,7 +1,16 @@
 @media(min-width: 1920px) {
+  .section3{
+    padding-bottom: 115px;
+  }
+  
   .section3-block__desc{
     font-size: 18px;
     letter-spacing: 0.5px;
   }
+
+  .section3-block:not(:nth-last-child(-n+2)){
+    margin-bottom: 0px;
+  }
+    
 }
 
