@@ -1,0 +1,24 @@
+@media(min-width: 1920px) {
+  .section3{
+    padding-bottom: 115px;
+  }
+  
+  .section3-block__desc{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .section3-block:not(:nth-last-child(-n+2)){
+    margin-bottom: 0px;
+  }
+
+   .section3__headline{
+       max-width: 1298px;
+   }
+
+   .section3__blocks{
+       max-width: 1298px;
+   }
+    
+}
+
