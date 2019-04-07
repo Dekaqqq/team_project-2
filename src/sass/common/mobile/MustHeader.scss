@@ -3,9 +3,8 @@
   background-position: 50% 0;
   background-size: cover;
 
-  @media (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-  background-image: url('../images/header-bg@2x.jpg');
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('../images/header-bg@2x.jpg');
   }
 }
 
@@ -16,9 +15,8 @@
 
 .header__text-content {
   padding: 320px 20px 0;
-  z-index:0;
+  z-index: 0;
   position: relative;
-  
 }
 
 .navigation__logo {
@@ -34,7 +32,8 @@
   background: rgba($purpley, $alpha: 0);
   display: flex;
   justify-content: space-between;
-  z-index:1;}
+  z-index: 1;
+}
 
 .navigation__item {
   text-align: center;
@@ -117,7 +116,7 @@
   border-bottom: 2px solid $white;
   border-right: 2px solid $white;
   transform: rotate(45deg);
-  z-index:0;
+  z-index: 0;
 }
 
 .header__scroll::after {
@@ -130,7 +129,7 @@
   display: inline-block;
   border-bottom: 2px solid $white;
   border-right: 2px solid $white;
-  z-index:0;
+  z-index: 0;
 }
 
 #menuToggle input {
@@ -163,7 +162,7 @@
   //z-index: 8;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-  opacity 0.55s ease;
+    opacity 0.55s ease;
   z-index: 1;
 }
 
@@ -257,10 +256,8 @@
   & .line-contain__item {
     background-color: $black;
   }
-
-}   
+}
 
 .changeColor input:checked ~ .line-contain .line-contain__item {
   background-color: $white;
 }
-
